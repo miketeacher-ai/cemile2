@@ -1,0 +1,160 @@
+
+No file chosen
+Library
+Search
+
+New
+
+All
+
+Images
+
+Files
+
+
+Name
+Modified
+Size
+
+Library
+/
+ielts_academic_band5_to_band7_12_week_material_pack.html
+1438
+1439
+1440
+1441
+1442
+1443
+1444
+1445
+1446
+1447
+1448
+1449
+1450
+1451
+1452
+1453
+1454
+1455
+1456
+1457
+1458
+1459
+1460
+1461
+1462
+1463
+1464
+1465
+1466
+1467
+1468
+1469
+1470
+1471
+1472
+1473
+1474
+1475
+1476
+1477
+1478
+1479
+1480
+1481
+1482
+1483
+1484
+1485
+1486
+1487
+1488
+1489
+1490
+1491
+1492
+1493
+1494
+1495
+1496
+1497
+1498
+1499
+1500
+1501
+1502
+1503
+1504
+1505
+1506
+  <h2>4. Teacher Master Rubrics</h2>
+  <div class='two-col'>
+    <div>
+      <h3>Writing feedback codes</h3>
+      <table><tr><th>Code</th><th>Meaning</th><th>Teacher action</th></tr>
+      <tr><td>TR/TA</td><td>Task Response / Task Achievement</td><td>Ask: Did she answer the exact question? Did Task 1 include a clear overview?</td></tr>
+      <tr><td>CC</td><td>Coherence and Cohesion</td><td>Mark topic sentence, logical link and paragraph purpose.</td></tr>
+      <tr><td>LR</td><td>Lexical Resource</td><td>Circle vague words and request precise topic vocabulary.</td></tr>
+      <tr><td>GRA</td><td>Grammar Range and Accuracy</td><td>Underline grammar errors that affect clarity first.</td></tr></table>
+    </div>
+    <div>
+      <h3>Speaking feedback codes</h3>
+      <table><tr><th>Code</th><th>Meaning</th><th>Teacher action</th></tr>
+      <tr><td>F</td><td>Fluency and coherence</td><td>Check answer length, pauses, linking and development.</td></tr>
+      <tr><td>V</td><td>Vocabulary</td><td>Note repeated words and give stronger natural alternatives.</td></tr>
+      <tr><td>G</td><td>Grammar</td><td>Track tense control, sentence range and self-correction.</td></tr>
+      <tr><td>P</td><td>Pronunciation</td><td>Mark word stress, final consonants, chunking and clarity.</td></tr></table>
+    </div>
+  </div>
+  <h3>Simple 5-point teacher score for every submitted task</h3>
+  <table><tr><th>Score</th><th>Meaning</th><th>Next action</th></tr>
+  <tr><td>1</td><td>Incomplete or not timed.</td><td>Redo under exact conditions.</td></tr>
+  <tr><td>2</td><td>Completed but many instructions ignored.</td><td>Repeat with teacher modelling.</td></tr>
+  <tr><td>3</td><td>Band 5-level attempt: understandable but limited.</td><td>Correct and upgrade one section.</td></tr>
+  <tr><td>4</td><td>Approaching Band 6.5: clear but not consistently flexible.</td><td>Add precision, examples and error control.</td></tr>
+  <tr><td>5</td><td>Band 7 direction: clear, developed, controlled and exam-aware.</td><td>Increase speed and complexity.</td></tr></table>
+</section>
+
+<section class='panel' id='reflection'>
+  <h2>5. Weekly Student Reflection Log</h2>
+  <p>The student completes this every Sunday. The teacher reads it before planning the next lesson.</p>
+  <table>
+    <tr><th>Question</th><th>Student answer</th></tr>
+    <tr><td>What was my strongest skill this week?</td><td style='height:60px'></td></tr>
+    <tr><td>What was my weakest skill this week?</td><td></td></tr>
+    <tr><td>What mistake did I repeat more than once?</td><td></td></tr>
+    <tr><td>What Band 7 upgrade did I practise?</td><td></td></tr>
+    <tr><td>What exact task will I do first next week?</td><td></td></tr>
+  </table>
+</section>
+
+<section class='panel'>
+  <h2>6. Homework Submission Message Template</h2>
+  <div class='callout success'>
+  <p><strong>Student message:</strong> Hello teacher, I have completed Week __ IELTS homework. I attached my timed first attempt, corrected version, checklist and reflection. My biggest problem this week was ____. The Band 7 upgrade I practised was ____. Please check my work and tell me the next correction priority.</p>
+  </div>
+</section>
+</main>
+<footer>IELTS Academic 12-Week Band 5 → Band 7/7.5 Material Pack • Classroom-ready HTML • Designed for precise guided study</footer>
+<script>
+const search = document.getElementById('search');
+search?.addEventListener('input', () => {
+  const q = search.value.toLowerCase();
+  document.querySelectorAll('.week-card').forEach(card => {
+    card.style.display = card.innerText.toLowerCase().includes(q) ? '' : 'none';
+  });
+});
+
+document.querySelectorAll('input[type="checkbox"][data-save]').forEach(cb => {
+  const key = 'ielts-pack-' + cb.dataset.save;
+  cb.checked = localStorage.getItem(key) === '1';
+  cb.addEventListener('change', () => localStorage.setItem(key, cb.checked ? '1':'0'));
+});
+function clearChecks() {
+  document.querySelectorAll('input[type="checkbox"][data-save]').forEach(cb => { cb.checked=false; localStorage.removeItem('ielts-pack-' + cb.dataset.save); });
+}
+</script>
+</body>
+</html>
+
